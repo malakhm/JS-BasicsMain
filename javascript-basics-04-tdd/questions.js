@@ -59,46 +59,57 @@ const stringSize = text => {
   };
   
 
-const createLanguagesArray = () => {
-
-}
-
-const createNumbersArray = () => {
-
-}
-
-const replaceElement = (languages) => {
-
-}
-
-const addElement = (languages) => {
-
-}
-
-const addNumberElement = (numbers) => {
-
-}
-
-const removeFirst = (languages) => {
-
-}
-
-const removeLast = (languages) => {
-
-}
-
-const convertStrToArr = (social_arr) => {
-
-}
-
-const convertArrToStr = (languages) => {
-
-}
-
-const sortArr = (social_arr) => {
-
-}
-
-const invertArr = (social_arr) => {
-
-}
+  const createLanguagesArray = () => {
+    const languages = ["Html", "CSS", "Java", "PHP"];
+    return languages;
+  };
+  
+  const createNumbersArray = () => {
+    const numbers = [0, 1, 2, 3, 4, 5];
+    return numbers;
+  };
+  
+  const replaceElement = languages => {
+    languages[2] = "Javascript";
+    return languages;
+  };
+  
+  const addElement = languages => {
+    languages.push("Ruby", "Python");
+    return languages;
+  };
+  
+  const addNumberElement = numbers => {
+    numbers.unshift(-2, -1);
+    return numbers;
+  };
+  
+  const removeFirst = languages => {
+    languages.shift();
+    return languages;
+  };
+  
+  const removeLast = languages => {
+    languages.pop();
+    return languages;
+  };
+  
+  const convertStrToArr = social_arr => {
+    const tableau = social_arr.split(",");
+    return tableau;
+  };
+  
+  const convertArrToStr = languages => {
+    const str = languages.join();
+    return str;
+  };
+  
+  const sortArr = social_arr => {
+    social_arr.sort();
+    return social_arr;
+  };
+  
+  const invertArr = function(social_arr) {
+    social_arr.reverse();
+    return social_arr;
+  };  
