@@ -1,60 +1,63 @@
-
-const stringSize = (text) => {
-
-}
-const replaceCharacterE = (text) => {
-
-}
-const concatString = (text1, text2) => {
-
-}
-const showChar5 = (text) => {
-
-}
-const showChar9 = (text) => {
-
-}
-const toCapitals = (text) => {
-
-}
-const toLowerCase = (text) => {
-
-}
-const removeSpaces = (text) => {
-
-}
-const IsString = (text) => {
-
-}
-
-const getExtension = (text) => {
-
-}
-const countSpaces = (text) => {
-
-}
-const InverseString = (text) => {
-
-}
-
-const power = (x, y) => {
-
-}
-const absoluteValue = (num) => {
-
-}
-const absoluteValueArray = (array) => {
-
-}
-const circleSurface = (radius) => {
-
-}
-const hypothenuse = (ab, ac) => {
-
-}
-const BMI = (weight, height) => {
-
-}
+const stringSize = text => {
+    return text.length;
+  };
+  const replaceCharacterE = text => {
+    return text.replace("e", " ");
+  };
+  const concatString = (text1, text2) => {
+    return text1 + text2;
+  };
+  const showChar5 = text => {
+    return text.charAt(4, 5);
+  };
+  const showChar9 = text => {
+    return text.substring(0, 9);
+  };
+  const toCapitals = text => {
+    return text.toUpperCase();
+  };
+  const toLowerCase = text => {
+    return text.toLowerCase();
+  };
+  const removeSpaces = text => {
+    return text.trim();
+  };
+  const IsString = text => {
+    return (text.IsString = true);
+  };
+  
+  const getExtension = text => {
+    return text.split(".").pop();
+  };
+  const countSpaces = text => {
+    return text.split(" ").length - 1;
+  };
+  const InverseString = text => {
+    return text
+      .split("")
+      .reverse()
+      .join("");
+  };
+  
+  const power = (x, y) => {
+    return Math.pow(x, y);
+  };
+  const absoluteValue = num => {
+    return Math.abs(num);
+  };
+  const absoluteValueArray = array => {
+    return array.map(Math.abs);
+  };
+  const circleSurface = radius => {
+    return Math.round(Math.PI * radius * radius);
+  };
+  const hypothenuse = (ab, ac) => {
+    return Math.hypot(ab, ac);
+  };
+  const BMI = (weight, height) => {
+    return parseFloat((weight / (height * height)).toFixed(2));
+  };
+  
 
 const createLanguagesArray = () => {
 
